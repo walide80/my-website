@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LQGN — personal profile, music and social links.">
+  <meta name="theme-color" content="#ffffff">
+  <title>LQGN — Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="page">
+    <section class="profile">
+      <div class="avatar-wrap">
+        <div class="avatar-glow"></div>
+        <img class="avatar" src="assets/profile.jpg" alt="LQGN profile picture">
+      </div>
+
+      <p class="eyebrow">PERSONAL PROFILE</p>
+      <h1>LQGN<span>.</span></h1>
+      <p class="bio">Music <b>•</b> Visuals <b>•</b> Creator</p>
+    </section>
+
+    <section class="player" aria-label="Music player">
+      <div class="track-head">
+        <button id="expandBtn" class="icon-btn expand" aria-expanded="false" aria-label="Show cover art">⌄</button>
+
+        <div class="track-info">
+          <small>NOW PLAYING</small>
+          <strong id="trackTitle">BOUHALI</strong>
+        </div>
+
+        <button id="playBtn" class="play" aria-label="Play">▶</button>
+      </div>
+
+      <div id="coverPanel" class="cover-panel">
+        <img id="coverArt" src="assets/profile.jpg" alt="Track cover">
+      </div>
+
+      <div class="timeline">
+        <span id="currentTime">0:00</span>
+        <input id="seekBar" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song timeline">
+        <span id="duration">0:00</span>
+      </div>
+
+      <div class="player-hint">Drag the timeline • Tap the arrow for cover art</div>
+      <audio id="audio" preload="metadata" src="assets/bouhali.mp3"></audio>
+    </section>
+
+    <footer class="socials">
+      <a class="social" href="https://www.instagram.com/l.qgn/" target="_blank" rel="noopener" aria-label="Instagram">
+        <span>◎</span><small>Instagram</small>
+      </a>
+
+      <a class="social" href="https://www.tiktok.com/@q_.z86" target="_blank" rel="noopener" aria-label="TikTok">
+        <span>♪</span><small>TikTok</small>
+      </a>
+
+      <a class="social" href="#" aria-label="X">
+        <span>𝕏</span><small>X</small>
+      </a>
+
+      <a class="social" href="#" aria-label="Telegram">
+        <span>➤</span><small>Telegram</small>
+      </a>
+
+      <span class="social disabled" aria-label="YouTube — Coming Soon" data-tooltip="Coming Soon">
+        <span>▶</span><small>YouTube</small>
+      </span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
